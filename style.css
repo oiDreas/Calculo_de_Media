@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+    margin-top: 90px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+*{
+    box-sizing: border-box;
+    background: #F2F2F2;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.esquerdo{
+width: 50vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.esquerdo > h1{
+    color: #F07536;
+    font-size: 3vw;
+    margin: 0;
+}
+
+.esquerdo > img {
+    width: 50vw;
+    background: #F2F2F2;
+}
+
+.direito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #F07536;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #F07536;
+}
+
+.card > h1 {
+    color: white;
+    font-weight: 800;
+    margin: 0;
+    background: #F07536;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width:100% ;
+    background: #F07536;
+    gap: 12px;
+}
+
+.textfield > input:not(.btn-calc){
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: #F2F2F2;
+    color: #1A0402;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/*
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    background: #F07536;
+
+} */
+
+.textfield > input::placeholder{
+    color: #1A0402;
+}
+
+.btn-calc{
+    width: 100%;
+    padding: 16px 0px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white;
+    background: #472210;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #1A0402;
+}
+
+#res {
+    background: #F07536;
+    box-shadow: 0px 10px 40px -12px #1A0402;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 950px){
+    .card{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        flex-direction: column;
+    }
+    .esquerdo > h1{
+        display: none;
+    }
+
+    .esquerdo{
+        width: 100%;
+        height: auto;
+    }
+
+    .direito{
+        width: 100%;
+        height: auto;
+    }
+
+    .esquerdo-imagem{
+        width: 50vw;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+}

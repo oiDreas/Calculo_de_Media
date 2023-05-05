@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Média da sua nota</title>
+  </head>
+  <body>
+    <!-- Boxes de Login -->
+    <div class="main">
+      <!-- Box Esquerda -->
+      <div class="esquerdo">
+
+        <h1 class="titulo-esquerdo">
+          Calcule sua <br /> &nbsp &nbsp &nbsp Média
+          
+        </h1>
+        <img src="./thesis-animate.svg" class="left-login-image" alt="Study" />
+
+      </div>
+
+      <!-- Box Direita -->
+      <div class="direito">
+
+        <div class="card">
+
+          <h1>Insira suas notas </h1>
+          <div class="textfield">
+            
+            <input type="number" name="txtmedia1" id="media1" placeholder="Matemática"  />
+            
+            <input type="number" name="txtmedia2" id="media2" placeholder="Português" />
+            
+            <input type="number" name="txtmedia3" id="media3" placeholder="Geografia" />
+            
+            <input type="number" name="txtmedia4" id="media4" placeholder="História" />
+            
+            <input type="number" name="txtmedia5" id="media5" placeholder="Inglês" />
+
+            <input type="button" value="Calcular" class="btn-calc" onclick="verificar()">
+
+            <div id="res">
+
+            </div>
+
+          </div> <!-- Fim textfield -->
+        </div> <!-- Fim card -->
+      </div> <!-- Fim card direito -->
+    </div> <!-- Fim main -->
+
+    <script src="./program.js"></script>
+  </body>
+</html>
