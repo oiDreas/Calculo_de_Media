@@ -19,5 +19,5 @@ function verificar() {
     
 
     if (totalmedia < 5)
-        res.innerHTML += ('REPROVADO')
+        res.innerHTML += ('<br> REPROVADO')
 }
